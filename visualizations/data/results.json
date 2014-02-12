@@ -1,0 +1,133 @@
+{
+    "head": {
+        "vars": [
+            "bucketName", 
+            "size"
+        ]
+    }, 
+    "results": {
+        "bindings": [
+            {
+                "bucketName": {
+                    "type": "literal", 
+                    "value": "Analog New Theses"
+                }, 
+                "size": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#decimal", 
+                    "type": "literal", 
+                    "value": "2.0"
+                }
+            }, 
+            {
+                "bucketName": {
+                    "type": "literal", 
+                    "value": "Analog Legacy Theses"
+                }, 
+                "size": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#decimal", 
+                    "type": "literal", 
+                    "value": "4.0"
+                }
+            }, 
+            {
+                "bucketName": {
+                    "type": "literal", 
+                    "value": "Digital Thesis Supplements"
+                }, 
+                "size": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#decimal", 
+                    "type": "literal", 
+                    "value": "1.0"
+                }
+            }, 
+            {
+                "bucketName": {
+                    "type": "literal", 
+                    "value": "Ad Hoc Digitized Theses"
+                }, 
+                "size": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#decimal", 
+                    "type": "literal", 
+                    "value": "1.0"
+                }
+            }, 
+            {
+                "bucketName": {
+                    "type": "literal", 
+                    "value": "Analog Thesis Supplements"
+                }, 
+                "size": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#decimal", 
+                    "type": "literal", 
+                    "value": "2.0"
+                }
+            }, 
+            {
+                "bucketName": {
+                    "type": "literal", 
+                    "value": "E-Theses"
+                }, 
+                "size": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#decimal", 
+                    "type": "literal", 
+                    "value": "2.0"
+                }
+            }, 
+            {
+                "bucketName": {
+                    "type": "literal", 
+                    "value": "School of Architecture Theses"
+                }, 
+                "size": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#decimal", 
+                    "type": "literal", 
+                    "value": "1.0"
+                }
+            }, 
+            {
+                "bucketName": {
+                    "type": "literal", 
+                    "value": "Digitized Thesis Supplements"
+                }, 
+                "size": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#decimal", 
+                    "type": "literal", 
+                    "value": "1.0"
+                }
+            }, 
+            {
+                "bucketName": {
+                    "type": "literal", 
+                    "value": "Systematically Digitized Theses"
+                }, 
+                "size": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#decimal", 
+                    "type": "literal", 
+                    "value": "3.0"
+                }
+            }, 
+            {
+                "bucketName": {
+                    "type": "literal", 
+                    "value": "Pilot E-Theses"
+                }, 
+                "size": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#decimal", 
+                    "type": "literal", 
+                    "value": "1.0"
+                }
+            }, 
+            {
+                "bucketName": {
+                    "type": "literal", 
+                    "value": "Department of Urban Studies and Planning Theses"
+                }, 
+                "size": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#decimal", 
+                    "type": "literal", 
+                    "value": "2.0"
+                }
+            }
+        ]
+    }
+}
