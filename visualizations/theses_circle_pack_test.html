@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>All Content Overview</title>
+      <script type="text/javascript" src="d3/d3.v3.js"></script>
+      <script type="text/javascript" src="d3/d3.layout.js"></script>
+			<style type="text/css">
+				text {
+					font-size: 11px;
+					pointer-events: none;
+				}
+
+				text.parent {
+					fill: #1f77b4;
+				}
+
+				circle {
+					fill: #ccc;
+					stroke: #999;
+					pointer-events: all;
+				}
+
+				circle.parent {
+					fill: #1f77b4;
+					fill-opacity: .1;
+					stroke: steelblue;
+				}
+
+				circle.parent:hover {
+					stroke: #ff7f0e;
+					stroke-width: .5px;
+				}
+
+				circle.child {
+					pointer-events: none;
+				}
+			</style>
+			<style id="clearly_highlighting_css" type="text/css">/* selection */ html.clearly_highlighting_enabled ::-moz-selection { background: rgba(246, 238, 150, 0.99); } html.clearly_highlighting_enabled ::selection { background: rgba(246, 238, 150, 0.99); } /* cursor */ html.clearly_highlighting_enabled {    /* cursor and hot-spot position -- requires a default cursor, after the URL one */    cursor: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--cursor.png") 14 16, text; } /* highlight tag */ em.clearly_highlight_element {    font-style: inherit !important; font-weight: inherit !important;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow.png");    background-repeat: repeat-x; background-position: top left; background-size: 100% 100%; } /* the delete-buttons are positioned relative to this */ em.clearly_highlight_element.clearly_highlight_first { position: relative; } /* delete buttons */ em.clearly_highlight_element a.clearly_highlight_delete_element {    display: none; cursor: pointer;    padding: 0; margin: 0; line-height: 0;    position: absolute; width: 34px; height: 34px; left: -17px; top: -17px;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite.png"); background-repeat: no-repeat; background-position: 0px 0px; } em.clearly_highlight_element a.clearly_highlight_delete_element:hover { background-position: -34px 0px; } /* retina */ @media (min--moz-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {    em.clearly_highlight_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow@2x.png"); }    em.clearly_highlight_element a.clearly_highlight_delete_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite@2x.png"); background-size: 68px 34px; } } </style><style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style>
+    </head>
+
+    <body>
+      <script type="text/javascript">
+	      var w = 1000,
+	      h = 600,
+	      r = 580,
+	      x = d3.scale.linear().range([0, r]),
+	      y = d3.scale.linear().range([0, r]),
+	      node,
+	      root;
+
+	      var pack = d3.layout.pack()
+	      .size([r, r])
+	      .value(function(d) { return d.size; })
+
+	      var vis = d3.select("body").insert("svg:svg")
+	      .attr("width", w)
+	      .attr("height", h)
+	      .append("svg:g")
+	      .attr("transform", "translate(" + (w - r) / 2 + "," + (h - r) / 2 + ")");
+
+	      d3.json("data/all_buckets.json", function(data) {
+	      	node = root = data;
+
+	      	var nodes = pack.nodes(root);
+
+	      	vis.selectAll("circle")
+	      	.data(nodes)
+	      	.enter().append("svg:circle")
+	      	.attr("class", function(d) { return d.children ? "parent" : "child"; })
+	      	.attr("cx", function(d) { return d.x; })
+	      	.attr("cy", function(d) { return d.y; })
+	      	.attr("r", function(d) { return d.r; })
+	      	.on("click", function(d) { return zoom(node == d ? root : d); });
+
+	      	vis.selectAll("text")
+	      	.data(nodes)
+	      	.enter().append("svg:text")
+	      	.attr("class", function(d) { return d.children ? "parent" : "child"; })
+	      	.attr("x", function(d) { return d.x; })
+	      	.attr("y", function(d) { return d.y; })
+	      	.attr("dy", ".35em")
+	      	.attr("text-anchor", "middle")
+	      	.style("opacity", function(d) { return d.r > 20 ? 1 : 0; })
+	      	.text(function(d) { return d.name; });
+
+	      	d3.select(window).on("click", function() { zoom(root); });
+	      });
+
+	      function zoom(d, i) {
+	      	var k = r / d.r / 2;
+	      	x.domain([d.x - d.r, d.x + d.r]);
+	      	y.domain([d.y - d.r, d.y + d.r]);
+
+	      	var t = vis.transition()
+	      	.duration(d3.event.altKey ? 7500 : 750);
+
+	      	t.selectAll("circle")
+	      	.attr("cx", function(d) { return x(d.x); })
+	      	.attr("cy", function(d) { return y(d.y); })
+	      	.attr("r", function(d) { return k * d.r; });
+
+	      	t.selectAll("text")
+	      	.attr("x", function(d) { return x(d.x); })
+	      	.attr("y", function(d) { return y(d.y); })
+	      	.style("opacity", function(d) { return k * d.r > 20 ? 1 : 0; });
+
+	      	node = d;
+	      	d3.event.stopPropagation();
+	      }
+
+
+			</script>
+			</body>
+			</html>

@@ -1,0 +1,560 @@
+{
+    "name": "All Digital Content", 
+    "children": [
+        {
+            "name": "Research Data", 
+            "children": [
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Faculty Research Data", 
+                    "size": "3.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#five_to_ten_years", 
+                    "name": "DLC Websites", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#five_to_ten_years", 
+                    "name": "Research Videos", 
+                    "size": "3.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Research Outcomes Websites", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Research Records", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#no_anticipated_acquisition", 
+                    "name": "Research Papers", 
+                    "size": "2.0"
+                }
+            ]
+        }, 
+        {
+            "name": "Geospatial Information", 
+            "children": [
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Atlases", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Aerial Photographs", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Geographic Indices", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Maps", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Purchased GIS Data in GeoWeb", 
+                    "size": "3.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#no_anticipated_acquisition", 
+                    "name": "Open GIS Data Hosted Elsewhere", 
+                    "size": "4.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Purchased GIS Data on External Media", 
+                    "size": "3.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Harvested Open GIS Data", 
+                    "size": "2.0"
+                }
+            ]
+        }, 
+        {
+            "name": "Digital Video", 
+            "children": [
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#five_to_ten_years", 
+                    "name": "Research Videos", 
+                    "size": "3.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#five_to_ten_years", 
+                    "name": "Promotional Videos", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#five_to_ten_years", 
+                    "name": "Administrative Videos", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#five_to_ten_years", 
+                    "name": "Course-Related Videos", 
+                    "size": "4.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Faculty Videos", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#five_to_ten_years", 
+                    "name": "Personal Videos", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#five_to_ten_years", 
+                    "name": "Community Videos", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Aga Khan Documentation Center Video Collections", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#five_to_ten_years", 
+                    "name": "Event Videos", 
+                    "size": "3.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Purchased DVDs", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Oral History Video Files", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#no_anticipated_acquisition", 
+                    "name": "Streaming Videos", 
+                    "size": "1.0"
+                }
+            ]
+        }, 
+        {
+            "name": "Institute Records", 
+            "children": [
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Instruction Records", 
+                    "size": "3.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "MIT Community Records", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Faculty Records", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Research Records", 
+                    "size": "2.0"
+                }
+            ]
+        }, 
+        {
+            "name": "Digital Audio", 
+            "children": [
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "MIT Music", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Music Scores", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Field Research Audio Files", 
+                    "size": "3.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Recorded Event Audio", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#no_anticipated_acquisition", 
+                    "name": "MIT Museum Audio", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Aga Khan Documentation Center Audio Collections", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Commercial Music", 
+                    "size": "4.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "MIT Spoken Word", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Commercial Spoken Word", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Oral History Audio Files", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Audio Transcriptions", 
+                    "size": "1.0"
+                }
+            ]
+        }, 
+        {
+            "name": "Architecture and Design Documentation", 
+            "children": [
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "FACADE Project Files", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#no_anticipated_acquisition", 
+                    "name": "Architectural Drawings", 
+                    "size": "3.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Digitized Architecture Collections", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Aga Khan Documentation Center Audio Collections", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#no_anticipated_acquisition", 
+                    "name": "FACADE Test Files", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#five_to_ten_years", 
+                    "name": "MIT Existing Building Plans", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#no_anticipated_acquisition", 
+                    "name": "MIT Building Design Plans", 
+                    "size": "3.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "School of Architecture Theses", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Aga Khan Documentation Center Collections", 
+                    "size": "3.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Architecture and Design Image Collections", 
+                    "size": "4.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Aga Khan Documentation Center Video Collections", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Department of Urban Studies and Planning Theses", 
+                    "size": "2.0"
+                }
+            ]
+        }, 
+        {
+            "name": "Faculty Archives", 
+            "children": [
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Manuscript Drafts", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Faculty Research Data", 
+                    "size": "3.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Faculty Images", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#five_to_ten_years", 
+                    "name": "Personal Faculty Papers", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Pre-Print Articles", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Faculty Videos", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Faculty Records", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#no_anticipated_acquisition", 
+                    "name": "Instruction Documentation", 
+                    "size": "3.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#no_anticipated_acquisition", 
+                    "name": "Research Papers", 
+                    "size": "2.0"
+                }
+            ]
+        }, 
+        {
+            "name": "Visual Resources", 
+            "children": [
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#no_anticipated_acquisition", 
+                    "name": "Architectural Drawings", 
+                    "size": "3.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Faculty Images", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Atlases", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#five_to_ten_years", 
+                    "name": "MIT Existing Building Plans", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Aerial Photographs", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#no_anticipated_acquisition", 
+                    "name": "MIT Building Design Plans", 
+                    "size": "3.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Maps", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Architecture and Design Image Collections", 
+                    "size": "4.0"
+                }
+            ]
+        }, 
+        {
+            "name": "Theses", 
+            "children": [
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Analog New Theses", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Analog Legacy Theses", 
+                    "size": "4.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Digital Thesis Supplements", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Ad Hoc Digitized Theses", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Analog Thesis Supplements", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "E-Theses", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "School of Architecture Theses", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Digitized Thesis Supplements", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Systematically Digitized Theses", 
+                    "size": "3.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Pilot E-Theses", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Department of Urban Studies and Planning Theses", 
+                    "size": "2.0"
+                }
+            ]
+        }, 
+        {
+            "name": "Scholarly Record", 
+            "children": [
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Open Access Collections", 
+                    "size": "4.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Pre-Print Articles", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Systematically Digitized Theses", 
+                    "size": "3.0"
+                }
+            ]
+        }, 
+        {
+            "name": "E-Books", 
+            "children": [
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Music Scores", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Partner Managed E-Books", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Licensed Locally Managed E-Books", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#no_anticipated_acquisition", 
+                    "name": "Licensed Vendor-Hosted E-Books", 
+                    "size": "4.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Ad Hoc Digitized Theses", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Purchased E-Books", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "E-Theses", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Pilot E-Theses", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#ongoing", 
+                    "name": "Locally Created or Acquired E-Books", 
+                    "size": "3.0"
+                }
+            ]
+        }, 
+        {
+            "name": "Web Content", 
+            "children": [
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#five_to_ten_years", 
+                    "name": "Instruction Websites", 
+                    "size": "2.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#five_to_ten_years", 
+                    "name": "DLC Websites", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#five_to_ten_years", 
+                    "name": "Non-MIT Websites", 
+                    "size": "3.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#five_to_ten_years", 
+                    "name": "Administrative Websites", 
+                    "size": "1.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#five_to_ten_years", 
+                    "name": "Web-Based Content", 
+                    "size": "3.0"
+                }, 
+                {
+                    "timeline": "http://www.semanticweb.org/hbailey/ontologies/2013/9/mitorg#three_to_five_years", 
+                    "name": "Research Outcomes Websites", 
+                    "size": "2.0"
+                }
+            ]
+        }
+    ]
+}
