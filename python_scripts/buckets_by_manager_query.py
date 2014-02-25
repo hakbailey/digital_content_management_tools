@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-get_all_buckets.py: Writes SPARQL queries to a 4store HTTP server and converts
+buckets_by_manager_query.py: Writes SPARQL queries to a 4store HTTP server and converts
 results to json.
 """
 
@@ -13,7 +13,7 @@ import json
 endpoint = "http://localhost:8080/sparql/"
 
 # Change to local path to output file
-local_output_file = "/Users/melonbreath/Dropbox/Programming/MIT Projects/digital_content_management_tools/visualizations/data/all_buckets.json" # path/to/file.json
+local_output_file = "/Users/melonbreath/Dropbox/Programming/MIT Projects/digital_content_management_tools/visualizations/data/buckets_by_manager.json" # path/to/file.json
 
 # List of all prefixes/URIs used in triplestore (update if new prefixes are added)
 prefixes = '''PREFIX aiiso: <http://purl.org/vocab/aiiso/schema#>
@@ -29,16 +29,16 @@ prefixes = '''PREFIX aiiso: <http://purl.org/vocab/aiiso/schema#>
 '''
 
 # Query to get all content types
-def getContentTypes():
-    queryString = 'SELECT ?contentType WHERE { \n\
-        ?contentType rdf:type dcm:Digital_Content_Type . }'
+def getManagers():
+    queryString = 'SELECT ?manager WHERE { \n\
+        ?manager rdf:type foaf:Organization . }'
     sparql.setQuery(prefixes + queryString)
     return sparql.query().convert()
     
 # Query to get all buckets in a content type
-def getContentTypeBuckets(contentType):
+def getBuckets(manager):
     queryString = 'SELECT ?bucketName ?size ?timeline WHERE { \n\
-        dcm:' + contentType + ' dcm:has_collection_type ?bucket .\n\
+        ?bucket dcm:is_managed_by dcm:' + manager + ' .\n\
         ?bucket rdfs:label ?bucketName . \n\
         ?bucket dcm:relative_size ?size . \n\
         ?bucket dcm:has_acquisition_timeline ?timeline . }'
@@ -48,19 +48,20 @@ def getContentTypeBuckets(contentType):
 # Run the queries and convert results to json
 sparql = SPARQLWrapper(endpoint)
 sparql.setReturnFormat("json")
-contentTypes = getContentTypes()
+managers = getManagers()
 results = []
-for result in contentTypes["results"]["bindings"]:
-    ct = result["contentType"]["value"]
-    tempResult = getContentTypeBuckets(ct[60:])
-    results.append([ct[60:], tempResult])
+for result in managers["results"]["bindings"]:
+    m = result["manager"]["value"]
+    tempResult = getBuckets(m[60:])
+    if tempResult["results"]["bindings"]:
+        results.append([m[60:], tempResult])
     
 # Convert JSON results to new JSON hierarchical tree formatted for d3 circle-packing layout
 tree = {'name': "All Digital Content", 'children': []}
 
-def formatContentType(type, buckets):
+def formatResults(manager, buckets):
     d = {}
-    d['name'] = type.replace("_", " ")
+    d['name'] = manager.replace("_", " ")
     d['children'] = []
     for bucket in buckets:
         n = bucket['bucketName']['value']
@@ -70,9 +71,9 @@ def formatContentType(type, buckets):
     return d
     
 for item in results:
-    t = str(item[0])
+    m = str(item[0])
     b = item[1]['results']['bindings']
-    j = formatContentType(t, b)
+    j = formatResults(m, b)
     tree['children'].append(j)
     
 # Write json output to file for D3 visualization

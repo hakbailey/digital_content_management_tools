@@ -78,7 +78,7 @@ var insertLinebreaks = function (t, d, width) {
 
 };
 
-d3.json("data/all_buckets.json", function(error, root) {
+d3.json("data/buckets_by_type.json", function(error, root) {
   var focus = root,
       nodes = pack.nodes(root);
 
